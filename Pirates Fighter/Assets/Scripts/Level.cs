@@ -7,12 +7,12 @@ public class Level : MonoBehaviour
 {
     public void LoadStartMenu()
     {
-        SceneManager.LoadScene("Start Menu");
+        SceneManager.LoadScene(0);
     }
 
     public void LoadGame()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene(1);
         FindObjectOfType<GameSession>().ResetGame();
     }
 
@@ -24,7 +24,7 @@ public class Level : MonoBehaviour
     IEnumerator WaitAndLoad()
     {
         yield return new WaitForSeconds(2f);
-        SceneManager.LoadScene("Game Over");
+        SceneManager.LoadScene(2);
     }
 
     public void QuitGame()

@@ -44,11 +44,11 @@ public class Player : MonoBehaviour
 
     private void Fire()                                                                                 // fire input for player
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetKeyDown("space"))
         {
             fireCoroutine = StartCoroutine(FiringRoutine());
         }
-        if (Input.GetButtonUp("Fire1"))
+        if (Input.GetKeyUp("space"))
         {
             StopCoroutine(fireCoroutine);
         }

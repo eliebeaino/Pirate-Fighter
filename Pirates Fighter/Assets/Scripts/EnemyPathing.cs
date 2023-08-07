@@ -9,7 +9,7 @@ public class EnemyPathing : MonoBehaviour
     int waypointIndex = 0;
     //Player player;
 
-    [SerializeField] float health = 100f;
+    //[SerializeField] float health = 100f;
 
     // Start is called before the first frame update
     void Start()
